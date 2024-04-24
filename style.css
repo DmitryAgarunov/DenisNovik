@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @font-face {
     font-family: "Gilroy";
     src: local("Gilroy-Medium"),
@@ -200,4 +201,215 @@ header{
     line-height: 16.98px;
 
 
+=======
+@font-face {
+    font-family: "Gilroy";
+    src: local("Gilroy-Medium"),
+      url("./fonts/Girloy-Medium.woff") format("woff"),
+      url("./fonts/Girloy-Medium.eot") format("eot"),
+      url("./fonts/Girloy-Medium.ttf") format("truetype");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Girloy";
+    src: local("Girloy-Bold"),
+      url("./fonts/Girloy-Bold.woff") format("woff"),
+      url("./fonts/Girloy-Bold.eot") format("eot"),
+      url("./fonts/Girloy-Bold.ttf") format("truetype");
+    font-weight: bold;
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color:#070707;
+    font-family: Gilroy-Medium, sans-serif;
+    font-size: 18px;
+}
+.gray{
+    background-color:#F6F6F6
+ }
+.container{
+    max-width: 940px;
+    width: 100%;
+    margin: 0 auto;
+}
+header{
+    background-color: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+.navigation{
+    display:flex;
+    justify-content: space-between;
+    padding-top: 33px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #828282;
+    width: 100%;
+    max-width: 940px;   
+}
+
+.navigation__li{
+    list-style: none;
+}
+.navigation__a{
+    color:#828282;
+    text-decoration: none;
+    font-family: "Gilroy-Bold", sans-serif;
+    transition: 0.5s;
+    font-weight: bold;
+}
+.navigation__a:hover{
+    color:#070707;
+}
+.title{
+    font-size: 34px;
+    font-family: Gilroy-Bold, sans-serif;
+    text-align: center;
+    margin-bottom: 18px;
+}
+.main{
+    margin-top: 86px;
+    padding-bottom: 50px;
+    padding-top: 40px;
+}
+/* .main__img{
+    margin-bottom: 50px;
+} */
+.main__text{
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 50px;
+    /* margin-top: 40px; */
+}
+.main__title{
+    font-size: 47px;
+    width: 124px;
+  }
+  .main__description{
+    width: 156px;
+}
+.about{
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+.about__text{
+    font-size: 18px;
+    text-align: center;
+    max-width: 485px;
+    margin:0 auto;
+    margin-bottom: 50px;
+    line-height: 21px;
+
+}
+.about__text:last-child{
+    margin-bottom: 0;
+}
+.skills{
+    padding-top: 90px;
+    padding-bottom: 110px;
+}
+.skills__text{
+    text-align: center; 
+    margin-bottom: 83px;
+}
+.skills__wrapper{
+    display:flex;
+    justify-content: space-between;
+}
+.skill__item{
+    width: 167px;
+}
+.item__logo{
+    display:block;
+    margin:0 auto;
+    margin-bottom: 23px;
+}
+.item__text{
+    text-align: center; 
+    margin-bottom: 41px;
+    color: #828282;
+    font-family: Girloy-Bold,sans-serif;
+    font-size: 14px;
+}
+.stars{
+    display: flex;
+    justify-content: space-between;
+        
+}
+.star-gray{
+    filter: invert(100%) sepia(0%) saturate(1601%) hue-rotate(218deg) brightness(117%) contrast(80%);
+}
+.portfolio{
+    padding-top: 93px;
+    padding-bottom: 96px;
+}
+.portfolio__title{
+    margin-bottom: 47px;
+}
+.portfolio__description{
+    text-decoration: underline;
+    text-align: center; 
+    margin-top: 43px;
+    margin-bottom: 99px;
+}
+.portfolio__item:last-child .portfolio__description{
+    margin-bottom: 0;
+}
+.contacts{
+    padding-top: 114px;
+    padding-bottom: 123px;
+}
+.contacts__title{
+    margin-bottom: 20px;
+}
+.contacts__text{
+    line-height: 21.83px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 29px;
+    width: 275px;
+}
+.contacts__button{
+    color:#F6F6F6;
+    padding: 13px 29px;
+    border-radius: 40px;
+    background-color:#070707;
+    border:none;
+    width: max-content;
+    margin: 0 auto;
+    margin-bottom: 85px;
+    display: block;    
+    cursor: pointer;
+    transition: 0.5s;
+}
+.contacts__button:hover{
+    color:#070707;
+    background-color: #F6F6F6;
+    outline: 1px solid #070707;
+}
+.contacts__social{
+    display: flex;
+    justify-content: space-between;
+    width: 342px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+
+}
+.contacts__description{
+    width: 243px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+    color:#828282;
+    line-height: 16.98px;
+
+
+>>>>>>> d4078b9 ([FIX] contacts button hover + header color)
 }
