@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Denis Novik</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
 </head>
 <body>
     <header>
         <div class="container">
             <nav>
-                <ul class="navigation">
+                <ul class="navigation desctop">
                     <li class="navigation__li"><a class="navigation__a" href="#home">Home</a></li>
                     <li class="navigation__li"><a class="navigation__a" href="#about">About me</a></li>
                     <li class="navigation__li"><a class="navigation__a" href="#skills">Skills</a></li>
@@ -20,13 +21,32 @@
             </nav>
         </div>
     </header>
+    <div class="mobile__menu">
+        <div class="container relative">
+            <nav>
+                <ul class="navigation mobile">
+                    <li class="navigation__li"><a class="navigation__a" href="#home">Home</a></li>
+                    <li class="navigation__li"><a class="navigation__a" href="#about">About me</a></li>
+                    <li class="navigation__li"><a class="navigation__a" href="#skills">Skills</a></li>
+                    <li class="navigation__li"><a class="navigation__a" href="#portfolio">Portfolio</a></li>
+                    <li class="navigation__li"><a class="navigation__a" href="#contacts">Contacts</a></li>
+                </ul>
+            </nav>
+            <img class="close" src="./img/close.svg" alt="закрыть">
+        </div>
+    </div>
     <section class="main" id="home">
         <div class="container">
             <div class="main__text">
-                <h1 class="main__title">Denis Novik</h1>
+                <div class="main__top">
+                    <h1 class="main__title">Denis Novik</h1>  
+                    <img class="mobile burger" src="./img/Burger.svg" alt="Burger menu button">
+                </div>
+                
                 <p class="main__description">UX | UI designer 24 years old, Minsk</p>
             </div>
-            <img class="main__img" src="./img/main/Novik.jpg" alt="Novik Pic">
+            <img class="main__img desctop" src="./img/main/Novik.jpg" alt="Novik Pic">
+            <img class="main__img mobile" src="./img/main/Novik_mobile.jpg" alt="Novik Pic">
         </div>
     </section>
     <section class="about gray" id="about">

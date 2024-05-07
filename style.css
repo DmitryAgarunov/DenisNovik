@@ -29,7 +29,8 @@ html{
     background-color:#F6F6F6
  }
 .container{
-    max-width: 940px;
+    max-width:1000px;
+    padding: 0 30px;
     width: 100%;
     margin: 0 auto;
 }
@@ -74,9 +75,9 @@ header{
     padding-bottom: 50px;
     padding-top: 40px;
 }
-/* .main__img{
-    margin-bottom: 50px;
-} */
+.main__img{
+    width: 100%;
+}
 .main__text{
     display:flex;
     justify-content: space-between;
@@ -84,11 +85,39 @@ header{
     margin-bottom: 50px;
     /* margin-top: 40px; */
 }
+.main__top{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-start;
+}
 .main__title{
     font-size: 47px;
     width: 124px;
-  }
-  .main__description{
+}
+.burger{
+    margin-top: 8px;
+    cursor: pointer;
+}
+.close{
+    position: absolute;
+    top: 66px;
+    right: 28px;
+    cursor: pointer;
+}
+.mobile__menu{
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    left: 100%;
+    transition:0.5s;
+}
+.relative{
+    position: relative;
+}
+.main__description{
     width: 156px;
 }
 .about{
@@ -109,7 +138,7 @@ header{
 }
 .skills{
     padding-top: 90px;
-    padding-bottom: 110px;
+    padding-bottom: 30px;
 }
 .skills__text{
     text-align: center; 
@@ -118,9 +147,11 @@ header{
 .skills__wrapper{
     display:flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .skill__item{
     width: 167px;
+    margin-bottom: 80px;
 }
 .item__logo{
     display:block;
@@ -158,6 +189,9 @@ header{
 .portfolio__item:last-child .portfolio__description{
     margin-bottom: 0;
 }
+.portfolio__image{
+    width: 100%;
+}
 .contacts{
     padding-top: 114px;
     padding-bottom: 123px;
@@ -193,7 +227,7 @@ header{
 .contacts__social{
     display: flex;
     justify-content: space-between;
-    width: 342px;
+    max-width: 342px;
     margin: 0 auto;
     margin-bottom: 45px;
 
@@ -205,4 +239,52 @@ header{
     font-size: 14px;
     color:#828282;
     line-height: 16.98px;
+}
+.d-none{
+    display: none;
+}
+.mobile{
+    display: none;
+}
+@media screen and (max-width: 425px){
+    .mobile{
+        display: block;
+    }
+    .desctop{
+        display: none;
+    }
+    .title{
+        margin-bottom: 50px;
+    }
+    .navigation{
+        border-bottom: none;
+        padding-top: 66px;
+    }
+    .navigation__a{
+        margin-bottom: 68px;
+        font-size: 34px;
+        display: block;
+    }
+    .main{
+        margin-top: 0;
+        padding-bottom: 80px;
+    }
+    .main__text{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 37px;
+    }
+    .main__title {
+        margin-bottom: 24px;
+    }
+    .about{
+        padding-top: 80px;
+        padding-bottom: 76px;
+    }
+    .skills__wrapper{
+        justify-content: center;    
+    }
+    .contacts__button{
+        width:100%;
+    }
 }
